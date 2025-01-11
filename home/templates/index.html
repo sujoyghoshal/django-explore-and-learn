@@ -1,0 +1,41 @@
+{% extends "./common/base.html" %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+{% block content %}
+<h3>{{ header }}</h3>
+<table class="table">
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Can Vote</th>
+    </tr>
+    {% for people in peoples %}
+    <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ people.name }}</td>
+        <td>{{ people.age }}</td>
+        <td {% if people.age < 18 %} style="background: red" {% endif %}>
+            {% if people.age >= 18 %}
+            💡
+            {% else %}
+            👎
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<p>
+    {% if "Mango" in vagetables %}
+    Yes Available
+    {% elif "potato" in vagetables %}
+    Yes Available
+    {% else %}
+    No Available
+    {% endif %}
+</p>
+{% endblock %}
