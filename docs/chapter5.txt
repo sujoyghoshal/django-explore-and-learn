@@ -1,4 +1,4 @@
- Chapater 3: Models And Migrations:
+ Chapater 5: Models And Migrations:
  ------------------------------------------
  *First go to any app
  *and crete a models.py like(Student/Product)
