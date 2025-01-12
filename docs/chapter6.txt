@@ -1,0 +1,31 @@
+Chapter 6: Django Shell
+--------------------------
+python manage.py shell
+    python manage.py shell
+
+Add Data to the Database:
+   from home.models import Student
+   student = Student(name="Sujoy", age=21, email="sujoyghoshal.s@gmail.com", address="Maligram")
+   student  # Check the data before saving
+   student.save()  # Save to database
+   student  # Verify saved data
+
+Using objects.create():
+   student = Student.objects.create(name="Subhadip", age=18, email="subhadip@gmail.com", address="Maligram")
+
+Get All Records: 
+    Student.objects.all()
+Access Specific Data:
+    Student.objects.all()[0].name
+    Student.objects.all()[0].email
+
+
+Key Notes:
+
+objects: Default model manager for database operations.
+Saving Data:
+Use save() for manual instances.
+Use create() for quick add-and-save.
+Accessing Data:
+all() retrieves all records.
+Use indexing ([0]) to access specific records.
