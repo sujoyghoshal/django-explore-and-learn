@@ -1,0 +1,25 @@
+ Chapater 3: Models And Migrations:
+ ------------------------------------------
+ *First go to any app
+ *and crete a models.py like(Student/Product)
+ 
+Install Pillow:
+  python -m pip install Pillow
+
+Run Migrations Again:
+  python manage.py makemigrations
+  python manage.py migrate
+
+
+Sql Lite viewr websit view:
+ https://sqliteviewer.app/#/db.sqlite3/table/django_migrations/
+
+
+Why You Deleted Migration Files
+" I deleted the migration files because they were outdated or causing conflicts, such as duplicate migrations or schema mismatches. Deleting them was necessary to clean up and avoid database inconsistency during development."
+
+* when i heat the command $python manage.py migrate then state mange django and chake strature the database then Ok.
+* All migration run internali
+* when no change then django its ok dont worry
+
+
