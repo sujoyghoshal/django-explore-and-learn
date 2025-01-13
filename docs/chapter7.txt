@@ -1,0 +1,24 @@
+Chapter 7: CURD Operations:
+----------------------------
+# #CURD Operation :
+class Car(models.Model):
+    car_name=models.CharField(max_length=500)
+    speed=models.IntegerField(default=50)
+
+
+
+
+ *crete the migration 👍
+  $python manage.py makemigrations
+
+ python manage.py migrate
+
+ Then go to the shell 👍
+ 1.python manage.py shell
+ 2.from home.models import *
+ 3.car =Car()
+ 4.car.save()
+ 5.car -> Then show car object crete
+ 6.
+
+

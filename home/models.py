@@ -12,3 +12,13 @@ class Student(models.Model):
     
 class Product(models.Model):
    pass
+
+
+# #CURD Operation :
+class Car(models.Model):
+    car_name=models.CharField(max_length=500)
+    speed=models.IntegerField(default=50)
+     
+    def __str__(self) ->str:
+       return self.car_name
+    

@@ -1,0 +1,21 @@
+Solution
+Activate Your Virtual Environment Ensure your virtual environment is activated:
+
+bash
+Copy code
+.\.venv\Scripts\activate
+Install Pillow Install the Pillow library:
+
+bash
+Copy code
+pip install Pillow
+Verify Installation After installation, verify that Pillow is installed:
+
+bash
+Copy code
+pip show Pillow
+Run the Server Again Retry running the server:
+
+bash
+Copy code
+python manage.py runserver
